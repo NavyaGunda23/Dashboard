@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Logo</title>
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+   
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+   
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header">
+            <a href="index.html" class="logo">
+              <img src="assets/img/logo.svg" alt="navbar brand" class="navbar-brand" height="20" />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <img src="assets/img/menu.svg" height="44" />
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <img src="assets/img/menu.svg" height="44" />
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item ">
+                <a  href="LandingPage.html" >
+                  <img src="assets/img/dashboard-inactive.svg" height="20" />
+                  <p class="ml--10 ">Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a  href="Assests.html">
+                  <img src="assets/img/assest.svg" height="20" />
+                  <p class="ml--10 ">Assets</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                  <img src="assets/img/settings.svg" height="20" />
+                  <p class="ml--10 ">Settings</p>
+                </a>
+              </li>
+              <li class="nav-item nav-item-footer">
+                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                  <img src="assets/img/logout.svg" height="20" />
+                  <p class="ml--10 ">Log out</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header">
+              <a href="index.html" class="logo">
+                <img src="assets/img/logo.svg" alt="navbar brand" class="navbar-brand" height="20" />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <img src="assets/img/menu.svg" height="44" />
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <img src="assets/img/menu.svg" height="44" />
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <img src="assets/img/menu.svg" height="44" />
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+              <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+                <h2>User Details</h2>
+              </nav>
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item topbar-icon dropdown  d-flex d-lg-none">
+                  <h2>User Details</h2>
+                </li>
+                <li class="nav-item topbar-icon dropdown " data-bs-toggle="modal" data-bs-target="#notificationModal">
+                 
+                  <img src="assets/img/notification.svg" height="24" />
+                 
+                
+                </li>
+                <li class="nav-item topbar-user dropdown">
+                  <div class="avatar-sm ml--20">
+                    <a href="EditUser.html"><img src="assets/img/profile.png" alt="..." class="avatar-img rounded-circle" /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+        <div class="container">
+          <div class="page-inner">
+            <div class="row">
+             
+              <div class="col-md-12">
+                <div class="card card-round">
+                  <div class="card-header border-bottom0 p-30">
+                    <div class="card-head-row ">
+                      <div class="card-title fontSize30">Edit User</div>
+                    </div>
+                    <div  class="card-body p-0 formcard ">
+                      <div class="row col-md-12 mt-50" >
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group ">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter Name" value="Oliva">
+                            
+                          </div>
+                         
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group ">
+                            <label for="lname">Last Name </label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" value="Rhye">
+                          </div>
+                         
+                        </div>
+                      </div>
+                      <div class="row col-md-12 mt-50" >
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group ">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" value="abcd@gmail.com">
+                            
+                          </div>
+                         
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group ">
+                            <label for="pNumber">Phone Number </label>
+                            <input type="text" class="form-control" id="pNumber" placeholder="Enter Mobile Number" value="+971 456 789 0">
+                          </div>
+                         
+                        </div>
+                      </div>
+                      <div class="row col-md-12 mt-50" >
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group ">
+                            <label for="sRole">Select Role</label>
+                            <select class="form-select form-control" id="sRole">
+                              <option>User</option>
+                              <option>Admin</option>
+                            </select>
+                            
+                          </div>
+                         
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group">
+                            <label for="sRole">Employee No</label>
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1">US</span>
+                              <input type="text" class="form-control" placeholder="0000111" aria-label="Username" aria-describedby="basic-addon1" value="00001">
+                            </div>
+                          </div>
+                         
+                        </div>
+                      </div>
+                      <div class="row col-md-12 mt-50" >
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group ">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" value="12342323">
+                            
+                          </div>
+                         
+                        </div>
+                     
+                      </div>
+
+                      <div class="row col-md-12 mt-50" >
+                        <div class="col-md-6 col-lg-6">
+                          <div class="card-action">
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-secondary ml--20">Cancel</button>
+                          </div>
+                         
+                        </div>
+                     
+                      </div>
+
+                    </div>
+                
+                  </div>
+                 
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Notifications</h5>
+              <img src="assets/img/modal-cross.svg"  class="close" data-bs-dismiss="modal"/>
+            </div>
+            <div class="modal-body">
+              
+             
+              <div class="row" style="margin: 10px;">
+              
+                <div class="col-md-12 col-lg-6">
+                  <div class="modal-containers p-10">
+                    <div class="row col-md-12 " >
+                      <table class="table  table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">No of Cameras</th>
+                            <th scope="col">About</th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Brings all your news into one place</td>
+                           
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Super lightweight design app</td>
+                           
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>AI and machine learning data</td>
+                           
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>AI and machine learning data</td>
+                           
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>AI and machine learning data</td>
+                           
+                          </tr>
+                         
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="2">
+                                <div class="row table-footer-container">
+                                    <button class="btn btn-secondary">Previous</button>
+                                    <h5>Page 1 of 3</h5>
+                                    <button class="btn btn-secondary">Next</button>
+                                </div>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 notificationpicture">
+                  <img src="assets/img/notification-picture.png" width="100%" height="100%" />
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!-- End Custom template -->
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+    <!-- Kaiadmin JS -->
+    <script src="assets/js/index.js"></script>
+    <script>
+     
+     var colors = ['#27AE60','#EB5757','#333333','#c3e6cb','#dc3545','#6c757d'];
+
+/* 3 donut charts */
+var donutOptions = {
+  cutoutPercentage: 85, 
+  legend: {position:'bottom', padding:5, labels: {pointStyle:'circle', borderWidth: 0,usePointStyle:true, fontColor: '#fff',
+  fontSize: 14}}
+};
+
+// donut 1
+var chDonutData1 = {
+    labels: ['5 Connected ', '15 Disconnected'],
+    datasets: [
+      {
+        backgroundColor: ['#27AE60','#EB5757'],
+        borderWidth: 0,
+        data: [40, 40]
+      }
+    ]
+};
+
+     var myDoughnutChart =  new Chart(doughnutChart, {
+      type: 'pie',
+      data: chDonutData1,
+      options: donutOptions
+  });
+
+ 
+    </script>
+  </body>
+</html>

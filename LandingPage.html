@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
    
     <link rel="stylesheet" href="assets/css/index.css" />
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="assets/css/demo.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -40,15 +38,15 @@
           <div class="sidebar-content">
             <ul class="nav nav-secondary">
               <li class="nav-item active">
-                <a data-bs-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+                <a  href="LandingPage.html" class="collapsed" aria-expanded="false">
                   <img src="assets/img/dashboard.svg" height="20" />
                   <p class="ml--10 ">Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#base">
+                <a  href="Assests.html">
                   <img src="assets/img/assest.svg" height="20" />
-                  <p class="ml--10 ">Base</p>
+                  <p class="ml--10 ">Assets</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -100,12 +98,15 @@
                 <li class="nav-item topbar-icon dropdown  d-flex d-lg-none">
                   <h2>Dashboard</h2>
                 </li>
-                <li class="nav-item topbar-icon dropdown ">
+                <li class="nav-item topbar-icon dropdown " data-bs-toggle="modal" data-bs-target="#notificationModal">
+                 
                   <img src="assets/img/notification.svg" height="24" />
+                 
+                
                 </li>
                 <li class="nav-item topbar-user dropdown">
                   <div class="avatar-sm ml--20">
-                    <img src="assets/img/profile.png" alt="..." class="avatar-img rounded-circle" />
+                    <a href="EditUser.html"><img src="assets/img/profile.png" alt="..." class="avatar-img rounded-circle" /></a>
                   </div>
                 </li>
               </ul>
@@ -118,7 +119,7 @@
             <div class="row">
               <div class="col-md-8">
                 <div class="card card-round">
-                  <img src="./assets/img/map.png" height="660" />
+                  <img src="./assets/img/map.png" class="height80" />
                 </div>
                 <div class="row custom-days-responsove">
                   <div class="col-sm-6 col-md-3 weather activeday">
@@ -142,7 +143,7 @@
                               <h4 class="card-title">Humidity: <b> 51%</b>
                               </h4>
                             </div>
-                            <div>
+                            <div >
                               <img src="./assets/img/weather.png" height="55" style="margin-bottom: 20px;" />
                               <h4 class="card-title ">Sunrise: <b>5:30AM</b>
                               </h4>
@@ -277,11 +278,12 @@
                       <div class="card-title">Camera's Online</div>
                     </div>
                     <div  class="card-body p-0 d-flex cameracards justify-content">
-                        <span class="badge badge-danger mt-2"><img src="./assets/img/Camera.svg" height="40" /></span>
+                        <span class="badge badge-danger mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/img/Camera.svg" height="40" /></span>
+                        
                     </div>
                 
                   </div>
-                  <div class="card-body pb-0">
+                  <div class="card-body pb-0" >
                     <canvas
                     id="doughnutChart"
                     
@@ -294,7 +296,7 @@
                 </div>
                 <div class="card card-round">
                   <div class="card-body pb-0 p-35 scroll-container">
-                    <div class="card card-round dark-color cameracards " style="display: grid;">
+                    <div class="card card-round dark-color cameracards " >
                       <div class="card-body p-0 d-flex justify-content-between">
                         <div class="ml--10 p-15">
                           <h2 class="text-white">Camera 1</h2>
@@ -305,7 +307,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card card-round dark-color cameracards " style="display: grid;">
+                    <div class="card card-round dark-color cameracards " >
                         <div class="card-body p-0 d-flex justify-content-between">
                           <div class="ml--10 p-15">
                             <h2 class="text-white">Camera 2</h2>
@@ -316,7 +318,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="card card-round dark-color cameracards " style="display: grid;">
+                      <div class="card card-round dark-color cameracards ">
                         <div class="card-body p-0 d-flex justify-content-between">
                           <div class="ml--10 p-15">
                             <h2 class="text-white">Camera 3</h2>
@@ -327,7 +329,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="card card-round dark-color cameracards " style="display: grid;">
+                      <div class="card card-round dark-color cameracards " >
                         <div class="card-body p-0 d-flex justify-content-between">
                           <div class="ml--10 p-15">
                             <h2 class="text-white">Camera 4</h2>
@@ -338,7 +340,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="card card-round dark-color cameracards " style="display: grid;">
+                      <div class="card card-round dark-color cameracards " >
                         <div class="card-body p-0 d-flex justify-content-between">
                           <div class="ml--10 p-15">
                             <h2 class="text-white">Camera 5</h2>
@@ -349,7 +351,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="card card-round dark-color cameracards " style="display: grid;">
+                      <div class="card card-round dark-color cameracards " >
                         <div class="card-body p-0 d-flex justify-content-between">
                           <div class="ml--10 p-15">
                             <h2 class="text-white">Camera 6</h2>
@@ -367,9 +369,172 @@
           </div>
         </div>
       </div>
+    <!-- Modal -->
+
+
     
+
+    <div class="modal fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Notifications</h5>
+            <img src="assets/img/modal-cross.svg"  class="close" data-bs-dismiss="modal"/>
+          </div>
+          <div class="modal-body">
+            
+           
+            <div class="row" style="margin: 10px;">
+            
+              <div class="col-md-12 col-lg-6">
+                <div class="modal-containers p-10">
+                  <div class="row col-md-12 " >
+                    <table class="table  table-dark">
+                      <thead>
+                        <tr>
+                          <th scope="col">No of Cameras</th>
+                          <th scope="col">About</th>
+                         
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Brings all your news into one place</td>
+                         
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Super lightweight design app</td>
+                         
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>AI and machine learning data</td>
+                         
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>AI and machine learning data</td>
+                         
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>AI and machine learning data</td>
+                         
+                        </tr>
+                       
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="2">
+                              <div class="row table-footer-container">
+                                  <button class="btn btn-secondary">Previous</button>
+                                  <h5>Page 1 of 3</h5>
+                                  <button class="btn btn-secondary">Next</button>
+                              </div>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6 notificationpicture">
+                <img src="assets/img/notification-picture.png" width="100%" height="100%" />
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        <img src="assets/img/modal-cross.svg"  class="close" data-bs-dismiss="modal"/>
+        <img src="assets/img/camera-image.png" width="100%"  />
+        <div class="row" style="margin: 10px;">
+          <div class="col-md-12 col-lg-6">
+              <div class="modal-containers">
+                <div class="row col-md-12 " >
+                  <div class="col-md-12 col-lg-12">
+                    <div class="form-group ">
+                      <h4 >Water Level Graph</h4> 
+                      <select class="form-select form-control" id="sRole">
+                        <option>VMS1</option>
+                        <option>VMS12</option>
+                      </select> 
+                    </div>
+                   
+                  </div>
+               
+                </div>
+                <div class="row mt-50">
+                  <canvas id="line-chart"></canvas>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="modal-containers p-10">
+              <div class="row col-md-12 " >
+                <table class="table  table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">No of Cameras</th>
+                      <th scope="col">About</th>
+                     
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Brings all your news into one place</td>
+                     
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Super lightweight design app</td>
+                     
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>AI and machine learning data</td>
+                     
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="2">
+                          <div class="row table-footer-container">
+                              <button class="btn btn-secondary">Previous</button>
+                              <h5>Page 1 of 3</h5>
+                              <button class="btn btn-secondary">Next</button>
+                          </div>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
       <!-- End Custom template -->
     </div>
+        <script src="assets/js/core/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+     
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery-3.7.1.min.js"></script>
     <script src="assets/js/core/bootstrap.min.js"></script>
@@ -404,8 +569,54 @@ var chDonutData1 = {
      var myDoughnutChart =  new Chart(doughnutChart, {
       type: 'pie',
       data: chDonutData1,
-      options: donutOptions
+      options: donutOptions,
+      responsive:true
   });
+
+  // Chart
+  const dataLine = {
+  type: 'line',
+    data: {
+      labels: ["Jan", "Mar", "May", "Jul", "Sep", "Nov", "Dec"],
+      datasets: [{
+          label: "My First dataset",
+          data: [65, 59, 80, 81, 56, 55, 40],
+          backgroundColor: [
+            'rgba(105, 0, 132, .0)',
+          ],
+          fill: true,
+          borderColor: [
+            'rgba(235, 87, 81, 1)',
+          ],
+          borderWidth: 2,
+          tension: 0.4
+        },
+       
+      ]
+    },
+    options: {
+      responsive: true,
+      legend: {
+        display: false
+    },
+    scales:{
+            yAxes: [{
+              ticks: {
+                    display: false //this will remove only the label
+                },
+                gridLines: {
+          color: '#fff',
+          lineWidth: 0.5
+        }
+            }]
+            
+        }
+        
+    }
+};
+
+new Chart(document.getElementById('line-chart'), dataLine);
+
 
  
     </script>
