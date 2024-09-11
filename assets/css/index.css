@@ -492,9 +492,7 @@ width: 90%;
 .text-white {
  color: white;
 }
-.cameracards{
-  width: 90%;
-}
+
 .cameracards .badge-success {
  background: #2196531a !important;
  padding: 8.28px !important;
@@ -848,9 +846,15 @@ width: 90%;
  }
 
 }
+
+@media screen and (max-width: 1300px) and (min-width: 300px) {
+  .activeday .numbers{
+    flex-direction: row !important;
+  }
+}
 @media (max-width: 1200px) {
 .activeday .numbers{
-  flex-direction: column;
+  flex-direction: column ;
 }
 .cameracards .card-body{
   flex-direction: column;
